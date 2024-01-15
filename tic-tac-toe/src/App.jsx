@@ -39,8 +39,8 @@ function derivedGameBoard(turns) {
     let gameBoard = newBoard(INITIAL_GAME_BOARD);
 
     for (const turn of turns) {
-        const { square, player } = turn;
-        const { row, col } = square;
+        const {square, player} = turn;
+        const {row, col} = square;
         gameBoard[row][col] = player;
     }
     return gameBoard;
@@ -61,7 +61,7 @@ function App() {
             const currentPlayer = deriveActivePlayer(prevTurns);
             return [
                 {
-                    square: { row: rowIndex, col: colIndex },
+                    square: {row: rowIndex, col: colIndex},
                     player: currentPlayer
                 },
                 ...prevTurns
