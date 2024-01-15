@@ -1,4 +1,5 @@
-import UserInputElement from "./UserInputElement.jsx";
+import { UserInputElement } from "./UserInputElement.jsx";
+
 
 export default function UserInput({inputs, onInputChange}) {
 
